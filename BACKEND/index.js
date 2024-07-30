@@ -14,7 +14,7 @@ import asignacionRoutes from "./routes/asignacion.js";
 import profesorRoutes from "./routes/profesor.js";
 
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const app = express();
 
 // Middleware para parsear JSON
